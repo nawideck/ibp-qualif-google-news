@@ -1,0 +1,9 @@
+ul.articles-list {
+  list-style-type: none;
+  padding-inline-start: 10px;
+
+  li {
+    margin-bottom: 0.25em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
