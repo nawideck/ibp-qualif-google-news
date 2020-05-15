@@ -1,0 +1,9 @@
+<div class="row col">
+  <ul class="articles-list">
+    <li *ngFor="let article of articles">
+      <span>{{ article?.publishedAt | date: 'medium' }}</span>
+      :
+      <a [routerLink]="" (click)="onClickArticle(article)">{{ article?.title }}</a>
+    </li>
+  </ul>
+</div>

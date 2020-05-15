@@ -1,0 +1,16 @@
+<h1>{{ article?.title }}</h1>
+<div class="row col">
+  <div class="col">
+    <p>{{ article?.description }}</p>
+    <p>{{ article?.source?.name }} | {{ article?.publishedAt | date: 'short' }}</p>
+
+    <p><img *ngIf="article?.urlToImage" class="img-fluid" alt="Image" [src]="article?.urlToImage" /></p>
+    <p>{{ article?.content }}</p>
+
+    <div class="d-flex justify-content-end w-100">
+      <a [attr.href]="article?.url">
+        Read more
+      </a>
+    </div>
+  </div>
+</div>
